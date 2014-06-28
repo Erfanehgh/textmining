@@ -1,0 +1,18 @@
+<div id="first_text_wrapper">
+
+<label for="first_text"> First article: </label>
+<textarea id="first_text" name="first_text" ROWS=8 COLS=50 />
+</textarea>
+</div>
+
+
+<div id="second_text_wrapper">
+
+<label for="second_text"> Second article: </label>
+<textarea id="second_text" name="second_text"  ROWS=8 COLS=50  />
+</textarea>
+</div>
+
+  <%= link_to "Score", './score',
+                                class: "btn btn-large btn-primary" %>
+

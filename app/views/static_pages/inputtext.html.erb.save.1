@@ -1,0 +1,20 @@
+<%= @user=User.new%>
+<h1> Input Text <h1>
+<h2> Please Enter your Text here for comparison! <h2>
+
+<%=form_for (@user) do |f|%>
+<%=f.label :First Article%>
+<%=f.text_area :irstarticle%>
+
+<%=f.label :Second Article%>
+<%=f.text_area :secondarticle%>
+
+<%= @nam=User.last.name %>
+<%= @nam =>:name %>
+<%= @email=User.last.email%>
+
+
+<%=f.submit "Score" , class: "btn btn-large btn-primary" %>
+
+
+<% end %>

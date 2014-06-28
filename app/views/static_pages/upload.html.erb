@@ -1,0 +1,14 @@
+
+
+<h1>File Upload</h1>
+<%= form_tag '/uploaded' , :multipart => true do %>
+  <label for="file">Upload First Article</label> <%= file_field_tag "file" %>
+<br>
+  <label for="file1">Upload Second Article</label> <%= file_field_tag "file1" %>
+<br>
+
+<br> 
+<%= submit_tag  "upload" %>
+
+<% end %>
+

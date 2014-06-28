@@ -1,0 +1,23 @@
+<p><label>Content of first article
+
+<%=@file_content%>
+
+ </label>
+
+</p>
+
+<p><label>Content of Second article
+
+<%=@file_content1%>
+
+ </label>
+
+</p>
+
+<%= User.create(name: User.last.name,email: User.last.email, firstarticle:@file_content,secondarticle: @file_content1)%>
+
+
+ <%= link_to "Sbmit & Score", './score',
+                                class: "btn btn-large btn-primary" %>
+
+

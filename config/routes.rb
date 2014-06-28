@@ -1,4 +1,25 @@
 Textmining::Application.routes.draw do
+
+#  resources :userhas
+
+#match 'controller/upload', to: '#upload',    via: 'post'
+#match '/upload',    to: 'static_pages#uploaded',    via: 'get' 
+
+# resources :users
+root  'static_pages#index'
+#match '/', to: 'static_pages#home', via: 'get'
+match '/help',    to: 'static_pages#help',    via: 'get'
+match '/about',   to: 'static_pages#about',   via: 'get'
+match '/contact', to: 'static_pages#contact', via: 'get'
+match '/upload',   to: 'static_pages#upload',   via: 'get'
+#match '/uploaded',   to: 'static_pages#uploaded',   via: 'get'
+
+match '/uploaded',   to: 'static_pages#uploaded',   via: 'post'
+
+match '/inputtext',   to: 'static_pages#inputtext',   via: 'get'
+
+match '/score', to: 'static_pages#score', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

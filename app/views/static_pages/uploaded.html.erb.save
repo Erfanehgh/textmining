@@ -1,0 +1,28 @@
+<p><label>Content of first article
+
+<%=@file_content%>
+
+ </label>
+
+</p>
+
+<p><label>Content of Second article
+
+<%=@file_content1%>
+
+ </label>
+
+</p>
+
+<%= @user=User.new%>
+
+<%=form_for (@user) do |f|%>
+<%=f.firstarticle @file_content%>
+<%=f.secondarticle @file%>
+
+
+ <%= f.submit "Sbmit & Score", './score',
+                                class: "btn btn-large btn-primary" %>
+
+
+<% end %>
