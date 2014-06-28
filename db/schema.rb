@@ -11,31 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140627142745) do
-
-  create_table "articles", force: true do |t|
-    t.string   "firstarticle"
-    t.string   "secondarticle"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "articles", ["user_id", "created_at"], name: "index_articles_on_user_id_and_created_at"
-
-  create_table "data_files", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "userhas", force: true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "firstarticle"
-    t.string   "secondarticle"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140628214357) do
 
   create_table "users", force: true do |t|
     t.string   "name"

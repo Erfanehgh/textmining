@@ -1,5 +1,7 @@
 Textmining::Application.routes.draw do
 
+  resources :users
+
 #  resources :userhas
 
 #match 'controller/upload', to: '#upload',    via: 'post'
