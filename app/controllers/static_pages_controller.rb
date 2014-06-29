@@ -53,7 +53,7 @@ def inputtext
 	#@user=User.new		
 end
 
-def new
+#def new
 	
-end
+#end
 end

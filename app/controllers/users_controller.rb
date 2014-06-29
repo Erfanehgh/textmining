@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     #    @score=text.calculateSimilarity(@first,@second)
 
 #    render  "./static_pages/score.html.erb"
-  end
+ end
 
   # GET /users/1
   # GET /users/1.json
