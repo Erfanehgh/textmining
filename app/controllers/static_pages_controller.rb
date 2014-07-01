@@ -50,7 +50,7 @@ end
   end
 
 def inputtext
-	#@user=User.new		
+	@user=User.new		
 end
 
 #def new
