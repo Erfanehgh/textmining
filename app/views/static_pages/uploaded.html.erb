@@ -1,3 +1,6 @@
+ <%= link_to "Confirm", './score',
+                                class: "btn btn-large btn-primary" %>
+
 <p><label>Content of first article
 
 <%=@file_content%>
@@ -17,7 +20,7 @@
 <%= User.create(name: User.last.name,email: User.last.email, firstarticle:@file_content,secondarticle: @file_content1)%>
 
 
- <%= link_to "Sbmit & Score", './score',
+ <%= link_to "Confirm", './score',
                                 class: "btn btn-large btn-primary" %>
 
 

@@ -17,11 +17,16 @@ def uploaded
 #post = DataFile.save(params[:file])
  #   render :text => "File has been uploaded successfully"
 
-uploaded_file = params[:file]
-@file_content = uploaded_file.read
+require './pdftotext.rb'
+textfile=Pdf2text.new
 
-uploaded_file1 = params[:file1]
-@file_content1 = uploaded_file1.read
+uploaded_file =params[:file].original_filename
+tf=textfile.pdf_to_text(params[:file].original_filename)
+@file_content =tf.join(" ")
+
+uploaded_file1 = params[:file1].original_filename
+tf2=textfile.pdf_to_text(params[:file1].original_filename)
+@file_content1 =tf2.join(" ")
 
 #puts "file_content"
 
@@ -40,7 +45,6 @@ end
   end
 
   def score
-
         require './textmining.rb'
 	@first = User.last.firstarticle
    	@second=User.last.secondarticle

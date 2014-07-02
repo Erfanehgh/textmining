@@ -14,12 +14,12 @@ match '/about',   to: 'static_pages#about',   via: 'get'
 match '/contact', to: 'static_pages#contact', via: 'get'
 match '/upload',   to: 'static_pages#upload',   via: 'get'
 match '/uploaded',   to: 'static_pages#uploaded',   via: 'get'
-
 match '/uploaded',   to: 'static_pages#uploaded',   via: 'post'
-
 match '/inputtext',   to: 'static_pages#inputtext',   via: 'get'
-
 match '/score', to: 'static_pages#score', via: 'get'
+match '/score', to: 'static_pages#score', via: 'post'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

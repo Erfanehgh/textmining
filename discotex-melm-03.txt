@@ -1,0 +1,1194 @@
+Multilingualism and Electronic Language Management: Proceedings of the 4th International MIDP Colloquium,
+September 2003, Bloemfontein, South Africa, Daelemans, W., du Plessis, T., Snyman, C. and Teck, L. (Eds.)
+pp.141-160, Van Schaik Pub., South Africa, 2005
+
+Text Mining with Information Extraction
+Raymond J. Mooney and Un Yong Nahm
+Department of Computer Sciences,
+University of Texas, Austin, TX 78712-1188
+mooney,pebronia @cs.utexas.edu
+ 
+
+¡
+
+Abstract
+Text mining concerns looking for patterns in unstructured text. The related task of Information Extraction (IE) is about locating speciﬁc items in natural-language documents. This paper
+presents a framework for text mining, called D ISCOTEX (Discovery from Text EXtraction),
+using a learned information extraction system to transform text into more structured data which
+is then mined for interesting relationships. The initial version of D ISCOTEX integrates an IE
+module acquired by an IE learning system, and a standard rule induction module. In addition,
+rules mined from a database extracted from a corpus of texts are used to predict additional
+information to extract from future documents, thereby improving the recall of the underlying
+extraction system. Encouraging results are presented on applying these techniques to a corpus
+of computer job announcement postings from an Internet newsgroup.
+
+1 Introduction
+The problem of text mining, i.e. discovering useful knowledge from unstructured or semi-structured
+text, is attracting increasing attention [4, 18, 19, 21, 22, 27]. This paper suggests a new framework
+for text mining based on the integration of Information Extraction (IE) and Knowledge Discovery from Databases (KDD), a.k.a. data mining. KDD and IE are both topics of signiﬁcant recent
+interest. KDD considers the application of statistical and machine-learning methods to discover
+novel relationships in large relational databases. IE concerns locating speciﬁc pieces of data in
+natural-language documents, thereby extracting structured information from free text. However,
+there has been little if any research exploring the interaction between these two important areas.
+In this paper, we explore the mutual beneﬁt that the integration of IE and KDD for text mining can
+provide.
+Traditional data mining assumes that the information to be “mined” is already in the form of a
+relational database. Unfortunately, for many applications, electronic information is only available
+in the form of free natural-language documents rather than structured databases. Since IE addresses
+the problem of transforming a corpus of textual documents into a more structured database, the
+database constructed by an IE module can be provided to the KDD module for further mining of
+knowledge as illustrated in Figure 1. Information extraction can play an obvious role in text mining
+as illustrated.
+
+1
+
+Text Data Mining
+
+Information
+Information
+Extraction
+Extraction
+
+DB
+
+Data Mining
+Data Mining
+
+Rules
+Rules
+
+Text
+
+Figure 1: Overview of IE-based text mining framework
+Although constructing an IE system is a difﬁcult task, there has been signiﬁcant recent progress
+in using machine learning methods to help automate the construction of IE systems [5, 7, 9, 23].
+By manually annotating a small number of documents with the information to be extracted, a
+reasonably accurate IE system can be induced from this labeled corpus and then applied to a large
+corpus of text to construct a database. However, the accuracy of current IE systems is limited
+and therefore an automatically extracted database will inevitably contain signiﬁcant numbers of
+errors. An important question is whether the knowledge discovered from this “noisy” database is
+signiﬁcantly less reliable than knowledge discovered from a cleaner database. This paper presents
+experiments showing that rules discovered from an automatically extracted database are close in
+accuracy to that discovered from a manually constructed database.
+A less obvious interaction is the beneﬁt that KDD can in turn provide to IE. The predictive
+relationships between different slot ﬁllers discovered by KDD can provide additional clues about
+what information should be extracted from a document. For example, suppose we discovered
+that computer-science jobs requiring “MySQL” skills are “database” jobs in many cases. If the
+IE system manages to locate “MySQL” in the language slot but failed to extract “database” in
+the area slot, we may want to assume there was an extraction error. Since typically the recall
+(percentage of correct slot ﬁllers extracted) of an IE system is signiﬁcantly lower than its precision
+(percentage of extracted slot ﬁllers which are correct) [13], such predictive relationships might
+be productively used to improve recall by suggesting additional information to extract. This paper reports experiments in the computer-related job-posting domain demonstrating that predictive
+rules acquired by applying KDD to an extracted database can be used to improve the recall of
+information extraction.
+The remainder of the paper is organized as follows. Section 2 presents some background information on text mining and IE. Section 3 describes a system called D ISCOTEX (DISCOvery from
+Text EXtraction) that combines IE and KDD for text mining. Section 4 presents and discuss performance gains obtained in IE by exploiting mined prediction rules. Section 5 discusses some related
+2
+
+work, Section 6 outlines directions for future research, and Section 7 presents our conclusions.
+
+2 Background: Text Mining and Information Extraction
+“Text mining” is used to describe the application of data mining techniques to automated discovery of useful or interesting knowledge from unstructured text [20]. Several techniques have been
+proposed for text mining including conceptual structure, association rule mining, episode rule mining, decision trees, and rule induction methods. In addition, Information Retrieval (IR) techniques
+have widely used the “bag-of-words” model [2] for tasks such as document matching, ranking, and
+clustering.
+The related task of information extraction aims to ﬁnd speciﬁc data in natural-language text.
+DARPA’s Message Understanding Conferences (MUC) have concentrated on IE by evaluating the
+performance of participating IE systems based on blind test sets of text documents [13]. The
+data to be extracted is typically given by a template which speciﬁes a list of slots to be ﬁlled with
+substrings taken from the document. Figure 2 shows a (shortened) document and its ﬁlled template
+for an information extraction task in the job-posting domain. This template includes slots that are
+ﬁlled by strings taken directly from the document. Several slots may have multiple ﬁllers for the
+job-posting domain as in programming languages, platforms, applications, and
+areas.
+We have developed machine learning techniques to automatically construct information extractors for job postings, such as those listed in the USENET newsgroup misc.jobs.offered
+[6]. By extracting information from a corpus of such textual job postings, a structured, searchable database of jobs can be automatically constructed; thus making the data in online text more
+easily accessible. IE has been shown to be useful in a variety of other applications, e.g. seminar
+announcements, restaurant guides, university web pages, apartment rental ads, and news articles
+on corporate acquisitions [5, 9, 23].
+
+3 Integrating Data Mining and Information Extraction
+In this section, we discuss the details of our proposed text mining framework, D ISCOTEX (Discovery from Text EXtraction). We consider the task of ﬁrst constructing a database by applying a
+learned information-extraction system to a corpus of natural-language documents. Then, we apply
+standard data-mining techniques to the extracted data, discovering knowledge that can be used for
+many tasks, including improving the accuracy of information extraction.
+
+3.1 The D ISCOTEX System
+In the proposed framework for text mining, IE plays an important role by preprocessing a corpus
+of text documents in order to pass extracted items to the data mining module. In our implementations, we used two state-of-the-art systems for learning information extractors, R APIER (Robust
+Automated Production of Information Extraction Rules) [6] and BWI (Boosted Wrapper Induction) [15]. By training on a corpus of documents annotated with their ﬁlled templates, they acquire
+a knowledge base of extraction rules that can be tested on novel documents. R APIER and BWI
+3
+
+Document
+Title: Web Development Engineer
+Location: Beaverton, Oregon
+This individual is responsible for design and implementation
+of the web-interfacing components of the AccessBase server,
+and general back-end development duties.
+A successful candidate should have experience that includes:
+One or more of: Solaris, Linux, IBM AIX, plus Windows/NT
+Programming in C/C++, Java
+Database access and integration: Oracle, ODBC
+CGI and scripting: one or more of Javascript,
+VBScript, Perl, PHP, ASP
+Exposure to the following is a plus: JDBC, Flash/Shockwave,
+FrontPage and/or Cold Fusion.
+A BSCS and 2+ years experience (or equivalent) is required.
+
+Filled Template
+title: “Web Development Engineer”
+ 
+
+location: “Beaverton, Oregon”
+ 
+
+languages: “C/C++”, “Java”, “Javascript”, “VBScript”, “Perl”, “PHP”, “ASP”
+ 
+
+platforms: “Solaris”, “Linux”, “IBM AIX”, “Windows/NT”
+ 
+
+applications: “Oracle”, “ODBC”, “JDBC”, “Flash/Shockwave”, “FrontPage”, “Cold Fusion”
+ 
+
+areas: “Database”, “CGI”, “scripting”
+ 
+
+degree required: “BSCS”
+years of experience: “2+ years”
+
+Figure 2: Sample text and ﬁlled template for a job posting
+
+4
+
+ 
+
+ 
+
+Standard Term
+”Access”
+”ActiveX”
+”AI”
+”Animation”
+”Assembly”
+”ATM”
+”C”
+”C++”
+”Client/Server”
+”Cobol”
+...
+
+Synonyms
+”MS Access”, ”Microsoft Access”
+”Active X”
+”Aritiﬁcial Intelligence”
+”GIF Animation”, ”GIF Optimization/Animation”
+”Assembler”
+”ATM Svcs”
+”ProC”, ”Objective C”
+”C ++”, ”C+ +”
+”Client Server”, ”Client-Server”, ”Client / Server”
+”Cobol II”, ”Cobol/400”, ”Microfocus Cobol”
+...
+
+Table 1: Synonym dictionary (partially shown)
+Job postings (600)
+
+and WindowsNT
+
+AIX
+
+and Graphics
+
+and Windows
+
+and Sybase
+and C
+
+ 
+
+ 
+
+ 
+
+ 
+
+Windows
+
+)&¡'& ¦
+0¥(%§%©¡X 
+ ¨ ¡ ¦££¡
+©¨§¥¤¢D  
+8"6F2¡¦HGD  
+7 5 £
+¡)7¡
+¤3¢ 
+
+ 
+
+UNIX
+
+and ActiveX
+
+ ¨ ¡ ¦ £ £¡
+"©¨§¥¤X 
+#  ¨ ¡ ¦ £ £¡
+S"!R2¨H¥AQ 
+¡ 7
+¤)"%¡¢ 
+# ¡)7¡
+IA3B 
+¡)7¡
+¤3¢ 
+# ¡)7¡
+CA3B 
+
+ 
+
+Java
+
+and Active Server Pages
+
+and Games
+and DB2
+
+and CORBA
+
+Web
+
+3D
+
+Lotus Notes
+
+#
+ ¨ ¡ ¦££¡
+"! ©¨§¥¤¢ 
+
+8""6!©¡§G 
+7 5 ¦ £
+)&¡'& ¦ U U T
+0¥(0§©¡X  WV@
+875 ¦£
+""6F ©¡§P 
+875 ¦£
+"6F ©¡§ED  
+)&¡'& ¦
+03§%§%2¡B 
+¡)7¡
+A3%¢ 
+)&¡'& ¦
+03§%§%2¡1 
+ ¨ ¡ ¦ £ £¡
+©¨§¥¤¢ 
+HTML
+Database
+
+SQL
+
+#  ¨ ¡ ¦ £ £¡
+@©¨§¥¤9 
+
+87 5 ¦ £
+""6!©¡§4 
+#  ¨ ¡ ¦££¡
+$"! ©¨§¥¤¢ 
+
+and QA Partner
+
+)&¡'& ¦
+0¥(%§%©¡¢ 
+
+Oracle
+
+and Title=Software Engineer
+
+Figure 3: Sample mined prediction rules for computer-science jobs
+have been demonstrated to perform well on realistic applications such as USENET job postings
+and seminar announcements.
+After constructing an IE system that extracts the desired set of slots for a given application,
+a database can be constructed from a corpus of texts by applying the IE extraction patterns to
+each document to create a collection of structured records. Standard KDD techniques can then
+be applied to the resulting database to discover interesting relationships. Speciﬁcally, we induce
+rules for predicting each piece of information in each database ﬁeld given all other information in a
+record. In order to discover prediction rules, we treat each slot-value pair in the extracted database
+”, and learn rules for predicting each feature
+as a distinct binary feature, such as “graphics
+from all other features.
+Similar slot ﬁllers are ﬁrst collapsed into a pre-determined standard term. For example, “Windows XP” is a popular ﬁller for the platforms slot, but it often appears as “Win XP”, “WinXP”,
+‘MS Win XP”, and so on. These terms are collapsed to unique slot values before rules are mined
+from the data. In our experiment, a manually-constructed synonym dictionary with 111 entries was
+employed. Table 1 shows the ﬁrst 10 entries of the dictionary.
+We have applied C4.5 RULES [34] to discover interesting rules from the resulting binary data.
+
+`db`
+"%caY
+5
+
+Resum´ postings (600)
+e
+
+ 
+
+)&¡'& ¦
+0¥(%§%©¡¢ 
+¡ "!R2H¥AB 
+ ¨ ¡ ¨¦ £ £ ¡
+ ¨ ¡ ¦££¡
+"! ©¨§¥¤¢ 
+
+ 
+
+ODBC
+ 
+
+Perl
+
+¡
+
+ 
+
+MS Excel
+
+and Web Design
+
+Photoshop 6
+
+¡ 03§%§%2B 
+8""6!©¡¦§£G 
+7 5
+) & ¡ ' &  ¡¦
+)&¡'& ¦
+0¥(%§%©¡¢ 
+ ¨ ¡ ¦ £ £¡
+©¨§¥¤¢ 
+
+ 
+
+Dreamweaver 4
+
+# ¤3Q 
+¡)7¡
+
+Flash
+
+XML
+
+ ¨ ¡ ¦ £ £¡
+©¨§¥¤Q 
+
+"¨! ©¨¦§¥¤¢ 
+¡ ££¡
+#$"¨! ¡©¨§¥¤¢ 
+
+¦££¡
+)&¡'& ¦
+03§%§%2¡B 
+
+Illustrator
+
+"! ©¨§£ A¢ 
+¨ ¡ ¦ £¡
+# ) 3§%§©¡¢ 
+&¡'& ¦
+
+and DHTML
+
+)&¡'& ¦
+0¥(%§%©¡¢ 
+
+HTML
+
+MS Access
+JSP
+
+and HTML
+
+Linux
+
+ 
+
+Figure 4: Sample rules of D ISCOTEX for computer-science resum´ postings
+e
+SF book descriptions (1,500)
+
+¡
+
+& ¨ ¡7 )&¡7) ¡
+§! "W0¥"A ¢ 
+
+5
+
+Knight of Shadows
+
+7  ' ¡
+c(B 
+
+ ) ¦) 7
+"R !©¡A3Q 
+
+¨ ¦
+©§ ¥£
+¤ ¢
+
+ 
+
+ ) ¦) 7
+"R !©¡A3¢ 
+
+¨ ¦
+© £
+¤ ¢
+
+¡ " c%¢ 
+7  ' ¡
+7  ' ¡
+c(B 
+
+Roger Zelazny
+
+Jeanne Robinson
+
+) ¤ '¨
+RA¤ 
+
+Spider Robinson
+
+and American Science Fiction
+
+¡
+
+Sign of the Unicorn
+
+ 
+ 
+
+Figure 5: Sample rules of D ISCOTEX for book descriptions
+Discovered knowledge describing the relationships between slot values is written in the form of
+production rules. If there is a tendency for “Web” to appear in the area slot when “Director”
+appears in the applications slot, this is represented by the production rule, “Director
+Web
+”. Rules can also predict the absence of a ﬁller in a slot; however, here we focus on
+rules predicting the presence of ﬁllers. Sample rules mined from a database of 600 jobs extracted
+from the USENET newsgroup austin.jobs with R APIER and C4.5 RULES are shown in Figure
+3.
+We also applied R IPPER [10] and A PRIORI [1] to discover interesting rules from the extracted
+data. A PRIORI is a standard association rule mining algorithm which discovers all association rules
+that have support and conﬁdence greater than the user-speciﬁed minimum support and minimum
+conﬁdence. Sample rules mined from a database of 600 resum´ s extracted from the USENET
+e
+newsgroup misc.jobs.resumes by BWI are shown in Figure 4. The ﬁrst three rules are
+induced by R IPPER while the other three are found by A PRIORI.
+Since any IE or KDD module can be plugged into the D ISCOTEX system, we also tested a
+highly-accurate information extractor (wrapper) manually developed for a book recommending
+system [28] to ﬁnd interesting patterns from a corpus of book descriptions. Sample association
+rules mined from a collection of 1,500 science ﬁction (SF) book descriptions from the online
+Amazon.com bookstore are shown in Figure 5. Slots such as authors, titles, subjects,
+related books, and average customer ratings are identiﬁed from the corpus.
+
+`
+A
+
+` Y
+
+1 0 $ ( & $" ! !
+§') '%#©
+
+`db
+"%c` Y
+
+6
+
+2
+
+3.2 Evaluation
+Discovered knowledge is only useful and informative if it is accurate. Therefore it is important
+to measure the accuracy of discovered knowledge on independent test data. The primary question
+we address in the experiments of this section is whether knowledge discovered from automatically
+extracted data (which may be quite noisy due to extraction errors) is relatively reliable compared
+to knowledge discovered from a manually constructed database.
+For the dataset, 600 computer-science job postings to the newsgroup austin.jobs were
+collected and manually annotated with correct extraction templates. Ten-fold cross validation was
+used to generate training and test sets. R APIER was used to learn the IE component and R IPPER
+was used as the KDD component. Rules were induced for predicting the ﬁllers of the languages,
+platforms, applications, and areas slots, since these are usually ﬁlled with multiple
+discrete-valued ﬁllers and have obvious potential relationships between their values (See [30] for
+more details on this experiment).
+In order to test the accuracy of the discovered rules, they are used to predict the information in a
+database of user-labeled examples. For each test document, each possible slot-value is predicted to
+be present or absent given information on all of its other slot-values. Average performance across
+all features and all test examples were then computed.
+The classiﬁcation accuracy for predicting the absence or presence of slot ﬁllers is not a particularly informative performance metric since high accuracy can be achieved by simply assuming
+every slot ﬁller is absent. This is because the set of potential slot ﬁllers is very large and only
+a small fraction of possible ﬁllers is present in any given example. Therefore, we evaluate the
+performance of D ISCOTEX using the IE performance metrics of precision, recall, and F-measure
+with regard to predicting slot ﬁllers. These metrics are deﬁned as follows:
+(1)
+
+(2)
+
+( 1 d %6! d 0 ( d ( '$ b ! d " c0 "
+ &  d ¡ `  ( ¡ 0 "d ¦
+ b
+¡db
+ d ! &d 0
+d ( '&$ b ¨" ( %b b £& ¡ d ¥ " c¥( 0 " ¡ " ` ¥ ( & $0 "©©£¤ £§'0$ ¡ $ %6!
+`
+`  b ¨ d ¨ §¥ §¥ ¤ ¢ 1 & d b
+¦
+
+`(
+
+¡ d " c"§0 " ¡ " ` ( & ` 0
+ d " &dbb0
+d ( &$ %b ! ( ¥ ¥£& ¡ d ¥ " ¥ c!§0 " ¡
+`(
+
+"
+
+b"d ¨ ¦ ¥
+` ©& §` ¤ 0 "d ©¦ ¤ %"" ¤b
+b ¨ ¥ ¢ `&d
+¥(
+
+We also report F-measure which is the harmonic mean of recall and precision:
+
+(3)
+
+"
+%"
+
+" " A%b 21 $ & d
+`&d 1 0
+¡ $ %b ! ¢ d `
+`&d
+Ab ) 1 $ ¡ £b ! 0( '%b ¥ ¡ "d &%#
+0 $ & d
+¦ $
+)
+
+Before constructing a database using an IE system, we ﬁltered out irrelevant documents from
+the newsgroup using a bag-of-words Naive-Bayes text categorizer [26]. 200 positive documents
+(computer-science job postings) and 20 negative examples (spam postings, resum´ s, or non-cs job
+e
+postings) are provided to the classiﬁer for training. The performance of the classiﬁer trained to
+predict the class ”relevant” was reasonably good; precision is about 96% and recall is about 98%.
+R APIER was trained on only 60 labeled documents, at which point its accuracy at extracting
+information is somewhat limited; extraction precision is about 91.9% and extraction recall is about
+52.4% . We purposely trained R APIER on a relatively small corpus in order to demonstrate that
+labeling only a relatively small number of documents can result in a good set of extraction rules
+that is capable of building a database from which accurate knowledge can be discovered.
+7
+
+DiscoTEX System
+User-labeled
+Examples
+
+IE
+Rule Base
+
+IE(Rapier)
+
+KDD(C4.5rules)
+
+Rule
+Induction
+
+Rule
+Induction
+
+Database
+
+Prediction
+
+Extraction
+
+Prediction
+Rule Base
+
+Examples
+
+KDD(C4.5rules)
+
+Human
+Extraction
+
+Database
+
+Rule
+Induction
+Prediction
+
+Prediction
+Rule Base
+
+compare
+
+Test
+
+Figure 6: The system architecture - training and testing
+Because of the two different training phases used in D ISCOTEX, there is a question of whether
+or not the training set for IE should also be used to train the rule-miner. To clearly illustrate the
+difference between mining human-labeled and IE-labeled data, the IE training data are thrown
+away once they have been used to train R APIER and ten-fold cross-validation is performed on the
+remaining 540 examples for evaluation of the data mining part. The same set of training examples
+was provided to both KDD systems, whereas the only difference between them is that the training
+data for D ISCOTEX is automatically extracted by R APIER after being trained on a disjoint set of
+60 user-labeled examples. The overall architecture of the ﬁnal system is shown in Figure 6.
+Figure 7 shows the learning curves for precision, recall, and F-measure of both system as well
+as a random guessing strategy used as a baseline. The random guessing method predicts a slotvalue based on its frequency of occurrence in the training data. Even with a small amount of
+user-labeled data, the results indicate that D ISCOTEX achieves a performance fairly comparable
+to the rule-miner trained on a manually constructed database.
+
+4 Using Mined Rules to Improve IE
+After mining knowledge from extracted data, D ISCOTEX can predict information missed by the
+previous extraction using discovered rules. In this section, we discuss how to use mined knowledge
+from extracted data to aid information extraction itself.
+
+8
+
+80
+Precision (Ripper on user-labeled data)
+Precision (DiscoTEX)
+Recall (Ripper on user-labeled data)
+Recall (DiscoTEX)
+F-measure (Ripper on user-labeled data)
+F-measure (DiscoTEX)
+Random-Guessing
+
+70
+
+60
+
+(%)
+
+50
+
+40
+
+30
+
+20
+
+10
+50
+
+100
+
+150
+
+200
+250
+300
+350
+400
+Number of Training Examples
+
+450
+
+500
+
+Figure 7: User-labeled data vs. IE-labeled data in rule accuracy
+
+4.1 The Algorithm
+Tests of IE systems usually consider two performance measures, precision and recall deﬁned as:
+(4)
+(5)
+
+( "
+& d
+0
+b   b
+¡ d )`#! d ( ( %b b £& 1$ ¡ "d%""$ 00 "d
+
+d ( & ` b ¦ ( ¡d ¡ "d%""$ ( ¥0 & 0 "d ©©¤ %"" ¤b
+ 
+b  & d b b  b ¨ ¨ ¦ ¥¦ ¥ ¤ ¢ ` & d
+ `   b   b
+d ( & b ( ¡d ¡ "d%""$ 00 "d
+
+d ( & ` b ( ¡d ¡ "d" " $ ( ¥£& ©"d ¤ §£¤ £§'0$ ¡ $ b !
+ 
+b  & d b b 0  ¨ 0 b ¦ ¥ ©¦ ¥ ¢ 1 & d
+¨
+
+Many extraction systems provide relatively high precision, but recall is typically much lower. Previous experiments in the job postings domain showed R APIER’s precision (e.g. low 90%’s) is
+singiﬁcantly higher than its recall (e.g. mid 60%’s) [6]. Currently, R APIER’s search focuses on
+ﬁnding high-precision rules and does not include a method for trading-off precision and recall.
+Although several methods have been developed for allowing a rule learner to trade-off precision
+and recall [11], this typically leaves the overall F-measure unchanged.
+By using additional knowledge in the form of prediction rules mined from a larger set of data
+automatically extracted from additional unannotated text, it may be possible to improve recall
+without unduly sacriﬁcing precision. For example, suppose we discover the rule “VoiceXML
+” “Mobile
+”. If the IE system extracted “VoiceXML
+” but failed to
+”, we may want to assume there was an extraction error and add “Mobile”
+extract “Mobile
+to the area slot, potentially improving recall. Therefore, after applying extraction rules to a document, D ISCOTEX applies its mined rules to the resulting initial data to predict additional potential
+extractions.
+First, we show the pseudocode for the rule mining phase in Figure 8. A ﬁnal step shown in
+the ﬁgure is ﬁltering the discovered rules on both the training data and a disjoint set of labeled
+validation data in order to retain only the most accurate of the induced rules. Currently, rules
+
+Y
+
+d¢ ¢
+§¥` ¥ £1 `" Y
+
+`db
+"c` Y
+
+9
+
+2
+
+`db
+"%c` Y
+
+d¢ ¢
+§¤` ¥ £1 `"
+
+Input: is the set of document.
+Output:
+is the set of prediction rules.
+Function RuleMining ( )
+Determine , a threshold value for rule validation
+Create a database of labeled examples (by applying IE to the document corpus, )
+do
+For each labeled example D
+:= set of slot ﬁllers of
+Convert to binary features
+Build a prediction rule base,
+(by applying rule miner to the binary data, )
+For each prediction rule
+do
+Verify on training data and validation data
+If the accuracy of is lower than
+Delete from
+Return
+.
+
+¢
+£¡
+
+ 
+
+ 
+
+¤
+
+¦
+   
+
+¥
+
+ 
+
+¥
+
+¥
+
+¢£¡ ¡
+¢
+£¡  
+
+¤
+
+¡
+
+¢
+£¡
+¡
+
+¡
+
+¢
+£¡
+
+Figure 8: Algorithm speciﬁcation: rule mining
+is the set of prediction rules.
+is the set of documents.
+Output: is the set of slot ﬁllers extracted.
+Function InformationExtraction (
+, )
+:= .
+For each example
+do
+Extract ﬁllers from using extraction rules and add them to
+For each rule in the prediction rule base
+do
+If ﬁres on the current extracted ﬁllers
+If the predicted ﬁller is a substring of
+Extract the predicted ﬁller and add it to
+Return .
+
+  £¡
+¢
+
+¥  
+¢
+£¡
+
+¥
+
+¦
+
+¢
+£¡
+
+¥
+
+¦
+
+Input:
+
+¥
+
+§
+
+    ¦
+
+¡
+
+¡
+
+¥
+
+Figure 9: Algorithm speciﬁcation: IE
+that make any incorrect predictions on either the training or validation extracted templates are
+discarded. Since association rules are not intended to be used together as a set as classiﬁcation
+rules are, we focus on mining prediction rules for this task.
+The extraction algorithm which attempts to improve recall by using the mined rules is summarized in Figure 9. Note that the ﬁnal decision whether or not to extract a predicted ﬁller is based
+on whether the ﬁller (or any of its synonyms) occurs in the document as a substring. If the ﬁller is
+found in the text, the extractor considers its prediction conﬁrmed and extracts the ﬁller.
+One ﬁnal issue is the order in which prediction rules are applied. When there are interacting
+rules, such as “XML
+Semantic Web
+” and “Semantic Web
+.NET
+”, different rule-application orderings can produce different results. Without
+the ﬁrst rule, a document with “XML
+” but without “Semantic Web
+” in its
+initial ﬁlled template will make the second rule ﬁre and predict “.NET
+”. However, if the
+ﬁrst rule is executed ﬁrst and its prediction is conﬁrmed, then “Semantic Web” will be extracted
+
+`db
+¡ "%c` ¨ Y
+
+`db
+"%c` Y
+
+`db
+¡ "c` Y
+
+`db`
+¡ "%caY
+
+2
+
+d¢ ¢
+H¥` ¥ £1 `" Y
+10
+
+d¢
+¡ §¥` ¥ ¢ 1 `" Y
+
+`db
+¡ "(` Y
+
+2
+
+and the second rule can no longer ﬁre. In D ISCOTEX, all rules with negations in their antecedent
+conditions are applied ﬁrst. This ordering strategy attempts to maximally increase recall by making
+as many conﬁrmable predictions as possible.
+To summarize, documents which the user has annotated with extracted information, as well as
+unsupervised data which has been processed by the initial IE system (which R APIER has learned
+from the supervised data) are all used to create a database. The rule miner then processes this
+database to construct a knowledge base of rules for predicting slot values. These prediction rules
+are then used during testing to improve the recall of the existing IE system by proposing additional
+slot ﬁllers whose presence in the document are conﬁrmed before adding them to ﬁnal extraction
+template.
+
+4.2 Evaluation
+To test the overall system, 600 hand-labeled computer-science job postings to the newsgroup
+austin.jobs were collected. 10-fold cross validation was used to generate training and test
+sets. In addition, 4,000 unannotated documents were collected as additional optional input to
+the text miner. Rules were induced for predicting the ﬁllers of the languages, platforms,
+applications, and areas slots, since these are usually ﬁlled with multiple discrete-valued
+ﬁllers and have obvious potential relationships between their values. Details of this experiment are
+described in [29].
+Figure 10 shows the learning curves for recall and F-measure. Unlabeled examples are not
+employed in these results. In order to clearly illustrate the impact of the amount of training data
+for both extraction and prediction rule learning, the same set of annotated data was provided to both
+R APIER and the rule miner. The results were statistically evaluated by a two-tailed, paired t-test.
+For each training set size, each pair of systems were compared to determine if their differences in
+recall and were statistically signiﬁcant (
+).
+D ISCOTEX using prediction rules performs better than R APIER. As hypothesized, D ISCOTEX
+provides higher recall, and although it does decrease precision somewhat, overall F-measure is
+moderately increased. One interesting aspect is that D ISCOTEX retains a ﬁxed recall advantage
+over R APIER as the size of the training set increases. This is probably due to the fact that the
+increased amount of data provided to the text miner also continues to improve the quality of the
+acquired prediction rules. Overall, these results demonstrate the role of data mining in improving
+the performance of IE.
+Table 2 shows results on precision, recall and F-measure when additional unlabeled documents are used to construct a larger database prior to mining for prediction rules. The 540 labeled
+examples used to train the extractor were always provided to the rule miner, while the number of
+additional unsupervised examples were varied from 0 to 4,000. The results show that the more unsupervised data supplied for building the prediction rule base, the higher the recall and the overall
+F-measure. Although precision does suffer, the decrease is not as large as the increase in recall.
+Although adding information extracted from unlabeled documents to the database may result
+in a larger database and therefore more good prediction rules, it may also result in noise in the
+database due to extraction errors and consequently cause some inaccurate prediction rules to be
+discovered as well. The average F-measure without prediction rules is 86.4%, but it goes up to
+88.1% when D ISCOTEX is provided with 540 labeled examples and 4,000 unlabeled examples.
+Unlabeled examples do not show as much power as labeled examples in producing good predic-
+
+§ ¤¢  
+¨¦¢¥£¡!
+
+11
+
+95
+Recall (RAPIER)
+Recall (DiscoTEX)
+F-measure (RAPIER)
+F-measure (DiscoTEX)
+
+90
+
+85
+
+80
+
+(%)
+
+75
+
+70
+
+65
+
+60
+
+55
+
+50
+
+45
+50
+
+100
+
+150
+
+200 250 300 350 400
+Number of Training Examples
+
+450
+
+500
+
+550
+
+Figure 10: Recall and F-measures on job postings
+Number of Examples
+for Rule Mining
+0
+540(Labeled)
+540+1000(Unlabeled)
+540+2000(Unlabeled)
+540+3000(Unlabeled)
+540+4000(Unlabeled)
+Matching Fillers
+
+Precision
+
+Recall
+
+F-Measure
+
+97.4
+95.8
+94.8
+94.5
+94.2
+93.5
+59.4
+
+77.6
+80.2
+81.5
+81.8
+82.4
+83.3
+94.9
+
+86.4
+87.3
+87.6
+87.7
+87.9
+88.1
+73.1
+
+Table 2: Performance results of D ISCOTEX with unlabeled examples
+tion rules, because only 540 labeled examples boost recall rate and F-measure more than 4,000
+unlabeled examples. However, unlabeled examples are still helpful since recall and F-measure do
+slowly increase as more unlabeled examples are provided.
+As a baseline, in the last row of Table 2, we also show the performance of a simple method
+for increasing recall by always extracting substrings that are known ﬁllers for a particular slot.
+Whenever a known ﬁller string, e.g. “C#”, is contained in a test document, it is extracted as a
+ﬁller for the corresponding slot, e.g. language. The reason why this works poorly is that a
+ﬁller string contained in a job posting is not necessarily the correct ﬁller for the corresponding slot.
+For instance, “HTML” can appear in a newsgroup posting, not in the list of required skills of that
+particular job announcement, but in the general instructions on submitting resum´ s.
+e
+
+12
+
+5 Related Research
+The most related system to our approach is probably D OCUMENT E XPLORER [14] which uses
+automatic term extraction for discovering new knowledge from texts. However, D OCUMENT E X PLORER assumes semi-structured documents such as SGML text unlike D ISCOTEX developed
+for general natural-language text. Similarly, automatic text categorization has been used to map
+web documents to pre-deﬁned concepts for further discovery of relationships among the identiﬁed
+concepts [24]. One of the limitations for these approaches is that they require a substantial amount
+of domain knowledge.
+Several rule induction methods and association rule mining algorithms have been applied to
+databases of corporations or product reviews automatically extracted from the web [17, 16, 33];
+however, the interaction between IE and rule mining has not been addressed. Recently a probabilistic framework for unifying information extraction and data mining has been proposed [25].
+In this work, a graphical model using conditional probability theory is adopted for relational data,
+but experimental results on this approach are yet to be gathered. A boosted text classiﬁcation system based on link analysis [12] is related to our work in spirit in that it also tries to improve the
+underlying learner by utilizing feedback from a KDD module.
+
+6 Future Research
+As mentioned in Section 3, D ISCOTEX collapses similar slot-ﬁllers in the extracted data into a
+canonical form based on a manually constructed dictionary. However, this approach has problems
+when a novel extracted entity is represented by similar but not identical strings in different documents. We have developed alternative rule-mining systems, T EXT RISE [31] and S OFTA PRIORI
+[32], that allow for partial matching of textual items based on a user-supplied similarity metric,
+such as edit-distance or bag-of-words cosine similarity. We are extending D ISCOTEX to utilize
+those soft-matching rules to improve the underlying IE performance.
+Good metrics for evaluating the interestingness of text-mined rules are also needed. One idea
+is to use a hierarchical lexical network to measure the semantic distance between the words in
+a rule, preferring “unexpected” rules where this distance is larger. We have developed such an
+approach using WordNet [3]. However, WordNet is general purpose and does not capture many
+of the semantic similarities in particular domains. Using a domain-speciﬁc taxonomy would be
+helpful for ﬁnding interesting rules. For example, this would allow ranking the rule “SQL Server
+PHP” above “MySQL PHP” since MySQL and PHP are both open source tools and therefore
+closer in a semantic hierarchy of software packages.
+2
+
+2
+
+7 Conclusions
+In this paper, we have presented an approach that uses an automatically learned IE system to extract
+a structured databases from a text corpus, and then mines this database with existing KDD tools.
+Our preliminary experimental results demonstrate that information extraction and data mining can
+be integrated for the mutual beneﬁt of both tasks. IE enables the application of KDD to unstructured text corpora and KDD can discover predictive rules useful for improving IE performance.
+
+13
+
+This paper has presented initial results on integrating IE and KDD that demonstrate both of these
+advantages.
+Text mining is a relatively new research area at the intersection of natural-language processing,
+machine learning, data mining, and information retrieval. By appropriately integrating techniques
+from each of these disciplines, useful new methods for discovering knowledge from large text
+corpora can be developed. In particular, the growing interaction between computational linguistics
+and machine learning [8] is critical to the development of effective text-mining systems.
+
+Acknowledgements
+This research was supported by the National Science Foundation under grant IIS-0117308.
+
+References
+[1] R. Agrawal and R. Srikant. Fast algorithms for mining association rules. In Proceedings
+of the 20th International Conference on Very Large Databases (VLDB-94), pages 487–499,
+Santiago, Chile, Sept. 1994.
+[2] R. Baeza-Yates and B. Ribeiro-Neto. Modern Information Retrieval. ACM Press, New York,
+1999.
+[3] S. Basu, R. J. Mooney, K. V. Pasupuleti, and J. Ghosh. Evaluating the novelty of text-mined
+rules using lexical knowledge. In Proceedings of the Seventh ACM SIGKDD International
+Conference on Knowledge Discovery and Data Mining (KDD-2001), pages 233–239, San
+Francisco, CA, 2001.
+[4] M. W. Berry, editor. Proceedings of the Third SIAM International Conference on Data
+Mining(SDM-2003) Workshop on Text Mining, San Francisco, CA, May 2003.
+[5] M. E. Califf, editor. Papers from the Sixteenth National Conference on Artiﬁcial Intelligence
+(AAAI-99) Workshop on Machine Learning for Information Extraction, Orlando, FL, 1999.
+AAAI Press.
+[6] M. E. Califf and R. J. Mooney. Relational learning of pattern-match rules for information
+extraction. In Proceedings of the Sixteenth National Conference on Artiﬁcial Intelligence
+(AAAI-99), pages 328–334, Orlando, FL, July 1999.
+[7] C. Cardie. Empirical methods in information extraction. AI Magazine, 18(4):65–79, 1997.
+[8] C. Cardie and R. J. Mooney. Machine learning and natural language (Introduction to special
+issue on natural language learning). Machine Learning, 34:5–9, 1999.
+[9] F. Ciravegna and N. Kushmerick, editors. Papers from the 14th European Conference on Machine Learning(ECML-2003) and the 7th European Conference on Principles and Practice
+of Knowledge Discovery in Databases(PKDD-2003) Workshop on Adaptive Text Extraction
+and Mining, Cavtat-Dubrovnik, Croatia, Sept. 2003.
+14
+
+[10] W. W. Cohen. Fast effective rule induction. In Proceedings of the Twelfth International
+Conference on Machine Learning (ICML-95), pages 115–123, San Francisco, CA, 1995.
+[11] W. W. Cohen. Learning to classify English text with ILP methods. In L. De Raedt, editor,
+Advances in Inductive Logic Programming, pages 124–143. IOS Press, Amsterdam, 1996.
+[12] W. W. Cohen. Improving a page classiﬁer with anchor extraction and link analysis. In
+S. Becker, S. Thrun, and K. Obermayer, editors, Advances in Neural Information Processing
+Systems 15, pages 1481–1488, Cambridge, MA, 2003. MIT Press.
+[13] DARPA, editor. Proceedings of the Seventh Message Understanding Evaluation and Conference (MUC-98), Fairfax, VA, Apr. 1998. Morgan Kaufmann.
+[14] R. Feldman, M. Fresko, H. Hirsh, Y. Aumann, O. Liphstat, Y. Schler, and M. Rajman. Knowledge management: A text mining approach. In U. Reimer, editor, Proceedings of Second International Conference on Practical Aspects of Knowledge Management (PAKM-98), pages
+9.1–9.10, Basel, Switzerland, Oct. 1998.
+[15] D. Freitag and N. Kushmerick. Boosted wrapper induction. In Proceedings of the Seventeenth
+National Conference on Artiﬁcial Intelligence (AAAI-2000), pages 577–583, Austin, TX, July
+2000. AAAI Press / The MIT Press.
+[16] R. Ghani and A. E. Fano. Using text mining to infer semantic attirbutes for retail data mining.
+In Proceedings of the 2002 IEEE International Conference on Data Mining (ICDM-2002),
+pages 195–202, Maebash City, Japan, Dec. 2002.
+[17] R. Ghani, R. Jones, D. Mladeni´ , K. Nigam, and S. Slattery. Data mining on symbolic knowlc
+edge extracted from the Web. In D. Mladeni´ , editor, Proceedings of the Sixth International
+c
+Conference on Knowledge Discovery and Data Mining (KDD-2000) Workshop on Text Mining, pages 29–36, Boston, MA, Aug. 2000.
+[18] M. Grobelnik, editor. Proceedings of IEEE International Conference on Data Mining (ICDM2001) Workshop on Text Mining (TextDM’2001), San Jose, CA, 2001.
+[19] M. Grobelnik, editor. Proceedings of the Eighteenth International Joint Conference on Artiﬁcial Intelligence(IJCAI-2003) Workshop on Text Mining and Link Analysis (TextLink-2003),
+Acapulco, Mexico, Aug. 2003.
+[20] J. Han and M. Kamber. Data Mining: Concepts and Techniques. Morgan Kaufmann, San
+Francisco, 2000.
+[21] M. A. Hearst. Untangling text data mining. In Proceedings of the 37th Annual Meeting of the
+Association for Computational Linguistics (ACL-99), pages 3–10, College Park, MD, June
+1999.
+[22] M. A. Hearst. What is text mining? http://www.sims.berkeley.edu/˜heast/text-mining.html,
+Oct. 2003.
+
+15
+
+[23] N. Kushmerick, editor. Proceedings of the Seventeenth International Joint Conference on Artiﬁcial Intelligence (IJCAI-2001) Workshop on Adaptive Text Extraction and Mining, Seattle,
+WA, Aug. 2001. AAAI Press.
+[24] S. Loh, L. K. Wives, and J. P. M. de Oliveira. Concept-based knowledge discovery in texts
+extracted from the Web. SIGKDD Explorations, 2(1):29–39, July 2000.
+[25] A. McCallum and D. Jensen. A note on the uniﬁcation of information extraction and data
+mining using conditional-probability, relational models. In Proceedings of the IJCAI-2003
+Workshop on Learning Statistical Models from Relational Data, Acapulco, Mexico, Aug.
+2003.
+[26] A. McCallum and K. Nigam. A comparison of event models for naive Bayes text classiﬁcation. In Papers from the AAAI-98 Workshop on Text Categorization, pages 41–48, Madison,
+WI, July 1998.
+[27] D. Mladeni´ , editor. Proceedings of the Sixth International Conference on Knowledge Disc
+covery and Data Mining (KDD-2000) Workshop on Text Mining, Boston, MA, Aug. 2000.
+[28] R. J. Mooney and L. Roy. Content-based book recommending using learning for text categorization. In Proceedings of the Fifth ACM Conference on Digital Libraries, pages 195–204,
+San Antonio, TX, June 2000.
+[29] U. Y. Nahm and R. J. Mooney. A mutually beneﬁcial integration of data mining and information extraction. In Proceedings of the Seventeenth National Conference on Artiﬁcial
+Intelligence (AAAI-2000), pages 627–632, Austin, TX, July 2000.
+[30] U. Y. Nahm and R. J. Mooney. Using information extraction to aid the discovery of prediction rules from texts. In Proceedings of the Sixth International Conference on Knowledge
+Discovery and Data Mining (KDD-2000) Workshop on Text Mining, pages 51–58, Boston,
+MA, Aug. 2000.
+[31] U. Y. Nahm and R. J. Mooney. Mining soft-matching rules from textual data. In Proceedings
+of the Seventeenth International Joint Conference on Artiﬁcial Intelligence (IJCAI-2001),
+pages 979–984, Seattle, WA, July 2001.
+[32] U. Y. Nahm and R. J. Mooney. Mining soft-matching association rules. In Proceedings of
+the Eleventh International Conference on Information and Knowledge Management (CIKM2002), pages 681–683, McLean, VA, Nov. 2002.
+[33] J. M. Pierre. Mining knowledge from text collections using automatically generated metadata. In D. Karagiannis and U. Reimer, editors, Proceedings of the Fourth International
+Conference on Practical Aspects of Knowledge Management (PAKM-2002), pages 537–548,
+Vienna, Austria, Dec. 2002. Springer. Lecture Notes in Computer Sicnece Vol. 2569.
+[34] J. R. Quinlan. C4.5: Programs for Machine Learning. Morgan Kaufmann, San Mateo,CA,
+1993.
+
+16
+
+
