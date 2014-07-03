@@ -18,7 +18,7 @@ def uploaded
 #require 'pdf-reader'
 
 #uploaded_file =params[:file].original_filename
-#reader = PDF::Reader.new(params[:file].original_filename)
+#reader = PDF::Reader.new(params[:file].path)
 #str=""
 #reader.pages.each do |page|
 #str=str+" "+page.text
@@ -27,7 +27,7 @@ def uploaded
 #@file_content =tf
 
 File.open(params[:file].path, "rb") do |io|
-  reader = PDF::Reader.new(io)
+ reader = PDF::Reader.new(io)
 str=""
 reader.pages.each do |page|
 str=str+" "+page.text
@@ -36,7 +36,7 @@ tf=str.gsub! "\n", " "
 @file_content =tf
 
 end
-
+#reader = PDF::Reader.new(params[:file1].path)
 File.open(params[:file1].path, "rb") do |io|
   reader = PDF::Reader.new(io)
 str=""
