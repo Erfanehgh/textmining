@@ -20,11 +20,11 @@ def uploaded
 require './pdftotext.rb'
 textfile=Pdf2text.new
 
-#uploaded_file =params[:file].original_filename
+uploaded_file =params[:file].original_filename
 tf=textfile.pdf_to_text(params[:file].original_filename)
 @file_content =tf.join(" ")
 
-#uploaded_file1 = params[:file1].original_filename
+uploaded_file1 = params[:file1].original_filename
 tf2=textfile.pdf_to_text(params[:file1].original_filename)
 @file_content1 =tf2.join(" ")
 
