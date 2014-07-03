@@ -17,15 +17,34 @@ def uploaded
 #post = DataFile.save(params[:file])
  #   render :text => "File has been uploaded successfully"
 
-require './pdftotext.rb'
-textfile=Pdf2text.new
+#require './pdftotext.rb'
+#textfile=Pdf2text.new
+
+def pdf_to_text(file, noblank = true)
+	spec = file.sub(/.pdf$/, '')
+	`pdftotext #{spec}.pdf`
+	file = File.new("#{spec}.txt")
+	text = []
+	file.readlines.each do |l|
+	l.chomp! if noblank
+	if l.length > 0
+	text << l
+	end
+    end
+file.close
+text
+end
+
+
 
 uploaded_file =params[:file].original_filename
-tf=textfile.pdf_to_text(params[:file].original_filename)
+#tf=textfile.pdf_to_text(params[:file].original_filename)
+tf=pdf_to_text(params[:file].original_filename)
 @file_content =tf.join(" ")
 
 uploaded_file1 = params[:file1].original_filename
-tf2=textfile.pdf_to_text(params[:file1].original_filename)
+#tf2=textfile.pdf_to_text(params[:file1].original_filename)
+tf2=pdf_to_text(params[:file1].original_filename)
 @file_content1 =tf2.join(" ")
 
 #puts "file_content"
