@@ -451,3 +451,17 @@ Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
   [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
   [1m[35m (0.2ms)[0m  begin transaction
   [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36m (57.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "firstarticle" text, "secondarticle" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (148.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (30.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (38.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140629123936')[0m
+  [1m[35m (45.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140628214357')
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (101.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "firstarticle" text, "secondarticle" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (36.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (32.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (42.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140629123936')[0m
+  [1m[35m (35.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140628214357')
+  [1m[36mActiveRecord::SchemaMigration Load (4.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
