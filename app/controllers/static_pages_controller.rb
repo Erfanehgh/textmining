@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-
+require 'open-uri'
 require 'pdf/reader'
 require 'rubygems'
 #  def index
@@ -17,8 +17,17 @@ def uploaded
 #require 'rubygems'
 #require 'pdf-reader'
 
-uploaded_file =params[:file].original_filename
-reader = PDF::Reader.new(uploaded_file)
+#uploaded_file =params[:file].original_filename
+#reader = PDF::Reader.new(params[:file].original_filename)
+#str=""
+#reader.pages.each do |page|
+#str=str+" "+page.text
+#end
+#tf=str.gsub! "\n", " "
+#@file_content =tf
+
+File.open(params[:file].path, "rb") do |io|
+  reader = PDF::Reader.new(io)
 str=""
 reader.pages.each do |page|
 str=str+" "+page.text
@@ -26,15 +35,29 @@ end
 tf=str.gsub! "\n", " "
 @file_content =tf
 
-
-uploaded_file1 =params[:file1].original_filename
-reader = PDF::Reader.new(uploaded_file1)
-str1=""
-reader.pages.each do |page|
-str1=str1+" "+page.text
 end
-tf2=str1.gsub! "\n", " "
-@file_content1 =tf2  
+
+File.open(params[:file1].path, "rb") do |io|
+  reader = PDF::Reader.new(io)
+str=""
+reader.pages.each do |page|
+str=str+" "+page.text
+end
+tf1=str.gsub! "\n", " "
+@file_content1 =tf1
+
+end
+
+
+
+#uploaded_file1 =params[:file1].original_filename
+#reader = PDF::Reader.new(uploaded_file1)
+#str1=""
+#reader.pages.each do |page|
+#str1=str1+" "+page.text
+#end
+#tf2=str1.gsub! "\n", " "
+#@file_content1 =tf2  
 
 #puts "file_content"
 
