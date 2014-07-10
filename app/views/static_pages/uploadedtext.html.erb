@@ -1,0 +1,25 @@
+<% provide(:title, 'Content Confirmation') %>
+
+ <%= link_to "Confirm", score_path,
+                                class: "btn btn-large btn-primary" %>
+
+<h1> Content of first article </h1>
+<br>
+<p>
+<%=@first%>
+</p>
+
+<h1>Content of Second article</h1>
+
+<br>
+<p>
+<%=@second%>
+</p>
+
+<%=current_user.update_attribute(:firstarticle, @first)%>
+<%=current_user.update_attribute(:secondarticle, @second)%>
+
+
+ <%= link_to "Confirm", score_path,
+                                class: "btn btn-large btn-primary" %>
+

@@ -1,26 +1,26 @@
- <%= link_to "Confirm", './score',
+<% provide(:title, 'Content Confirmation') %>
+
+ <%= link_to "Confirm", score_path,
                                 class: "btn btn-large btn-primary" %>
 
-<p><label>Content of first article
-
+<label>Content of first article</label>
+<br>
+<p>
 <%=@file_content%>
-
- </label>
-
 </p>
 
-<p><label>Content of Second article
+<label>Content of Second article</label>
 
+<br>
+<p>
 <%=@file_content1%>
-
- </label>
-
 </p>
 
-<%= User.create(name: User.last.name,email: User.last.email, firstarticle:@file_content,secondarticle: @file_content1)%>
+<%=current_user.update_attribute(:firstarticle, @file_content)%>
+<%=current_user.update_attribute(:secondarticle, @file_content1)%>
 
 
- <%= link_to "Confirm", './score',
+ <%= link_to "Confirm", score_path,
                                 class: "btn btn-large btn-primary" %>
 
 

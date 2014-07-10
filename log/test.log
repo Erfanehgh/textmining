@@ -465,3 +465,2351 @@ Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
   [1m[36m (42.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140629123936')[0m
   [1m[35m (35.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140628214357')
   [1m[36mActiveRecord::SchemaMigration Load (4.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/static_pages/help" for 127.0.0.1 at 2014-07-08 03:19:18 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/static_pages/help" for 127.0.0.1 at 2014-07-08 03:19:18 +0430
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/static_pages/index" for 127.0.0.1 at 2014-07-08 03:19:18 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/static_pages/index" for 127.0.0.1 at 2014-07-08 03:19:18 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/static_pages/index" for 127.0.0.1 at 2014-07-08 03:19:18 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/static_pages/contact" for 127.0.0.1 at 2014-07-08 03:19:18 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/static_pages/contact" for 127.0.0.1 at 2014-07-08 03:19:18 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/static_pages/contact" for 127.0.0.1 at 2014-07-08 03:26:23 +0430
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/static_pages/help" for 127.0.0.1 at 2014-07-08 03:26:23 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-08 03:27:11 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (4.5ms)
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/custom.css.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 5507b670199e1fd91c7a0c2e921ac93009ee8acd/bootstrap.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/bootstrap.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_variables.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_mixins.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_reset.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_grid.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_layouts.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_type.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_code.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_forms.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tables.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_sprites.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_wells.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_component-animations.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_close.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_buttons.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_button-groups.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_alerts.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navs.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navbar.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pagination.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pager.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_modals.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tooltip.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_popovers.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_media.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_labels-badges.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_accordion.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_carousel.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_hero-unit.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_utilities.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/scaffolds.css.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/static_pages.css.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/upload.css.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/upload_controller.css.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/userhas.css.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/users.css.scssc: can't dump anonymous class #<Class:0x00000004119578>
+
+  Rendered layouts/_shim.html.erb (1.7ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 15651ms (Views: 15648.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-08 03:27:27 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-08 03:28:48 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 221ms (Views: 218.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-08 03:28:48 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-08 03:28:48 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (2.0ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-08 03:28:48 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/index" for 127.0.0.1 at 2014-07-08 03:28:48 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/index" for 127.0.0.1 at 2014-07-08 03:28:48 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/index" for 127.0.0.1 at 2014-07-08 03:28:48 +0430
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-08 03:30:18 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_shim.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 208ms (Views: 205.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-08 03:30:18 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-08 03:30:18 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-08 03:30:18 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-08 03:30:19 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-08 03:30:19 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-08 03:30:19 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:55:55 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 342ms (Views: 340.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:55:55 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:55:56 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 09:55:56 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 09:55:56 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 09:55:56 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 09:55:56 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:58:39 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 233ms (Views: 231.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:58:39 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:58:39 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 09:58:40 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 09:58:40 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 09:58:40 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 09:58:40 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 10:07:34 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 242ms (Views: 240.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 10:07:35 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 10:07:35 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 10:07:35 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 10:07:35 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 10:07:35 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 193ms (Views: 189.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 10:07:35 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 10:24:24 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 337ms (Views: 334.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 10:24:25 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 10:24:25 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 10:24:25 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 10:24:25 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 10:24:25 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 10:24:25 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:01:02 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (10.4ms)
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/custom.css.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 5507b670199e1fd91c7a0c2e921ac93009ee8acd/bootstrap.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/bootstrap.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_variables.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_mixins.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_reset.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_scaffolding.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_grid.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_layouts.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_type.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_code.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_forms.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tables.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_sprites.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_dropdowns.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_wells.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_component-animations.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_close.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_buttons.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_button-groups.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_alerts.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navs.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navbar.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pagination.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pager.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_modals.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tooltip.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_popovers.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_thumbnails.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_media.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_labels-badges.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_progress-bars.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_accordion.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_carousel.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_hero-unit.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_utilities.scssc: can't dump anonymous class #<Class:0x000000035e3578>
+
+  Rendered layouts/_shim.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 10494ms (Views: 10492.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:01:13 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:01:13 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:01:13 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (3.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:01:13 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:01:13 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:01:13 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:02:40 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (42.2ms)
+  Rendered layouts/_shim.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 667ms (Views: 665.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:02:41 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:02:41 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:02:41 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:02:41 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:02:41 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:02:41 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:13:24 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (21.2ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 338ms (Views: 335.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:13:25 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:13:25 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:13:25 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:13:25 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:13:25 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:13:25 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:16:00 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 163ms (Views: 160.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:16:00 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:16:00 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:16:00 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:16:00 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:16:00 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:16:01 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:26:23 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (36.0ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 369ms (Views: 367.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:26:23 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-09 13:26:23 +0430
+Processing by StaticPagesController#index as HTML
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:26:24 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-09 13:26:24 +0430
+Processing by StaticPagesController#help as HTML
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 95ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:26:24 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-09 13:26:24 +0430
+Processing by StaticPagesController#contact as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/users" for 127.0.0.1 at 2014-07-09 13:26:24 +0430
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 12ms
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 13:35:25 +0430
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (2.1ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 300ms (Views: 290.1ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 13:35:26 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 13:37:14 +0430
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 222ms (Views: 214.0ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 13:37:15 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 13:38:45 +0430
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 223ms (Views: 215.0ms | ActiveRecord: 1.1ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 13:38:45 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (47.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "firstarticle" text, "secondarticle" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (29.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (23.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (22.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140629123936')[0m
+  [1m[35m (104.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140628214357')
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36m (46.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "firstarticle" text, "secondarticle" text, "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255)) [0m
+  [1m[35m (22.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (24.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (23.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140709135658')[0m
+  [1m[35m (23.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140628214357')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (4.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (2.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (46.5ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 14:26:37 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$gfU5AoqSDOao7ANFKJh18OaPD0J24fFqlwvdq4LdV.fHDzgMiJxEG"], ["updated_at", Wed, 09 Jul 2014 14:26:37 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 14:26:38 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$PR9CgyJG3S9p5QAIW9jiwersUl1jOcRCJYqf4QR5ZS8ci1miKL3HG"], ["updated_at", Wed, 09 Jul 2014 14:26:38 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.9ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 14:26:38 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$xIB7Qb5LCmqbjEKmDUqfg.csLiWSI60LonTNy1C.UOv12rSsXKB.2"], ["updated_at", Wed, 09 Jul 2014 14:26:38 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 20:54:28 +0430
+Processing by UsersController#new as HTML
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/custom.css.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 5507b670199e1fd91c7a0c2e921ac93009ee8acd/bootstrap.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/bootstrap.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_variables.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_mixins.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_reset.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_grid.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_layouts.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_type.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_code.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_forms.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tables.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_sprites.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_wells.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_component-animations.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_close.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_buttons.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_button-groups.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_alerts.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navs.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navbar.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pagination.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pager.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_modals.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tooltip.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_popovers.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_media.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_labels-badges.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_accordion.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_carousel.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_hero-unit.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_utilities.scssc: can't dump anonymous class #<Class:0x00000003e0da28>
+
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 10144ms (Views: 10050.2ms | ActiveRecord: 6.2ms)
+  [1m[36m (6.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 20:54:39 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (3.9ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 21:06:23 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 316ms (Views: 274.5ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 21:06:24 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 21:32:12 +0430
+Processing by UsersController#new as HTML
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/custom.css.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 5507b670199e1fd91c7a0c2e921ac93009ee8acd/bootstrap.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/bootstrap.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_variables.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_mixins.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_reset.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_grid.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_layouts.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_type.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_code.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_forms.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tables.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_sprites.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_wells.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_component-animations.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_close.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_buttons.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_button-groups.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_alerts.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navs.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navbar.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pagination.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pager.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_modals.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tooltip.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_popovers.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_media.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_labels-badges.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_accordion.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_carousel.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_hero-unit.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_utilities.scssc: can't dump anonymous class #<Class:0x00000003fb15f0>
+
+  Rendered layouts/_shim.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 10478ms (Views: 10425.4ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 21:32:22 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 21:32:22 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 21:32:22 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (3.8ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 21:33:55 +0430
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (471.1ms)
+  Rendered layouts/_shim.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 928ms (Views: 885.5ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-09 21:33:56 +0430
+Processing by UsersController#new as HTML
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36m (45.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "firstarticle" text, "secondarticle" text, "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255)) [0m
+  [1m[35m (22.9ms)[0m  CREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36m (26.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (23.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (23.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140709193148')
+  [1m[36m (24.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140628214357')[0m
+  [1m[35m (23.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140709135658')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (33.4ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 19:35:00 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$4luco4MopsB92W3MKIE9XeIMo97fCP.Nidh0NspaW6bxdpZ/MBnby"], ["updated_at", Wed, 09 Jul 2014 19:35:00 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 19:35:01 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$rjbxSjdavdXPqi2YtrTVbe/Q3Z2KyHHlVpsl9MRMugHn5r3.9/91O"], ["updated_at", Wed, 09 Jul 2014 19:35:01 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 19:35:01 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$Y214U1a3FlS/r4fUOOD9SuRI82d4EceoGpKpYP1DQ.uLx1DCvVFCu"], ["updated_at", Wed, 09 Jul 2014 19:35:01 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (27.1ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 19:39:20 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$Y5yBfM4zVhV8S3HTuQ2V2epPpI53CUxBxQXlsrE74EK2X6V/tnp46"], ["remember_token", "99da93ae19198d71794fc81fc4dc5320aa55feb9"], ["updated_at", Wed, 09 Jul 2014 19:39:20 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 19:39:20 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$NY7jRaKnTTmTNPL5bWhpL.shl023ILqckM2Q/jgcwLd2n3HIY7HC2"], ["remember_token", "ba34c1b3e99b8b5e68ba2d0f17e88ce9a57d2749"], ["updated_at", Wed, 09 Jul 2014 19:39:20 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 19:39:20 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$7gIGHEBhEitlb0u.p.7L8uwq6hCK1fBuPwHcvZFWMhgR8.sbNxl4a"], ["remember_token", "29e2a5b79b4dee2dbfc8a024bcb94730d03126c6"], ["updated_at", Wed, 09 Jul 2014 19:39:20 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 19:39:20 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$0/HlwVlENQ.r5RxkLYL3JuGtOTr9eHyTfmr5bfEmTfaArGLi7CudK"], ["remember_token", "fb60254dccd5fbaf485290aed01f017f3a6ddf1b"], ["updated_at", Wed, 09 Jul 2014 19:39:20 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-10 00:43:57 +0430
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (7.3ms)
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/custom.css.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 5507b670199e1fd91c7a0c2e921ac93009ee8acd/bootstrap.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/bootstrap.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_variables.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_mixins.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_reset.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_grid.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_layouts.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_type.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_code.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_forms.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tables.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_sprites.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_wells.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_component-animations.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_close.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_buttons.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_button-groups.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_alerts.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navs.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_navbar.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pagination.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_pager.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_modals.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_tooltip.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_popovers.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_media.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_labels-badges.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_accordion.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_carousel.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_hero-unit.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 85296c02f85bb05bc7328cbdff9dc95f649e95b6/_utilities.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Warning. Error encountered while saving cache 5589a42bf37fa22e3c5ab3aa90848cf85582bd81/sessions.css.scssc: can't dump anonymous class #<Class:0x00000002c3a710>
+
+Completed 500 Internal Server Error in 12652ms
+  [1m[36m (10.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-10 00:44:10 +0430
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.6ms)
+Completed 500 Internal Server Error in 87ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-10 00:44:10 +0430
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.4ms)
+Completed 500 Internal Server Error in 173ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signup" for 127.0.0.1 at 2014-07-10 00:44:10 +0430
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.5ms)
+Completed 500 Internal Server Error in 66ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:44:10 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 162ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:44:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 58ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:44:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 151ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:44:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 76ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:44:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 159ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:44:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 60ms
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:44:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 152ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:44:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 58ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:44:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 158ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  Rendered shared/_error_messages.html.erb (1.7ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (8.9ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"MyString"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 16ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"MyString"}}
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 15ms (Views: 2.6ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"MyString"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 26ms (Views: 4.0ms | ActiveRecord: 0.6ms)
+  [1m[36mUser Load (6.9ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"invalid value"}}
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"invalid value"}}
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/users" for 127.0.0.1 at 2014-07-10 00:44:12 +0430
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 53ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#upload as HTML
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#help as HTML
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#about as HTML
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#contact as HTML
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (2.3ms)[0m  rollback transaction
+  [1m[36m (1.9ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#score as HTML
+Completed 500 Internal Server Error in 135ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (35.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 20:14:13 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$/mKL4BcTxQXWxBGaFh6LAul462Bw/3jZCXJUV./LYApKvYY1FtjHi"], ["remember_token", "dd3b3e6d8909956c8b0a7e1c1db29065961d5bd0"], ["updated_at", Wed, 09 Jul 2014 20:14:13 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 20:14:14 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$8.VAZpECNipSlvSOoVWMi.8tFzOXKS653QteSgDBuCT0qoFt4Qz16"], ["remember_token", "d5bbd76f083686b55d8dc9db596defe3957c4f8b"], ["updated_at", Wed, 09 Jul 2014 20:14:14 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.3ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 20:14:14 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$LsXJH9KIRN/.2GyMsEndaOKCM2DKYtwkKQVmMgUvP1bySEXn/ysyS"], ["remember_token", "160d6200111a63c4af256e7563b4258e840f561f"], ["updated_at", Wed, 09 Jul 2014 20:14:14 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 20:14:14 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$Z595uR3UiGQ1qMYmQ3kJl.zr1rZv6BJVXTvv6Lnq7qqtUkOUH6viC"], ["remember_token", "40d2d2c137b063490a4689220c8fdde058085eac"], ["updated_at", Wed, 09 Jul 2014 20:14:14 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  Rendered users/_form.html.erb (24.8ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-10 00:44:14 +0430
+Processing by StaticPagesController#index as HTML
+Completed 500 Internal Server Error in 80ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-10 00:44:14 +0430
+Processing by StaticPagesController#index as HTML
+Completed 500 Internal Server Error in 186ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-10 00:44:14 +0430
+Processing by StaticPagesController#index as HTML
+Completed 500 Internal Server Error in 73ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-10 00:44:14 +0430
+Processing by StaticPagesController#help as HTML
+Completed 500 Internal Server Error in 161ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-10 00:44:14 +0430
+Processing by StaticPagesController#help as HTML
+Completed 500 Internal Server Error in 55ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-10 00:44:14 +0430
+Processing by StaticPagesController#contact as HTML
+Completed 500 Internal Server Error in 162ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-10 00:44:15 +0430
+Processing by StaticPagesController#contact as HTML
+Completed 500 Internal Server Error in 57ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  Rendered users/index.html.erb (5.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-10 00:50:09 +0430
+Processing by StaticPagesController#help as HTML
+Completed 500 Internal Server Error in 251ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/help" for 127.0.0.1 at 2014-07-10 00:50:10 +0430
+Processing by StaticPagesController#help as HTML
+Completed 500 Internal Server Error in 147ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-10 00:50:10 +0430
+Processing by StaticPagesController#index as HTML
+Completed 500 Internal Server Error in 67ms
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-10 00:50:10 +0430
+Processing by StaticPagesController#index as HTML
+Completed 500 Internal Server Error in 156ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-07-10 00:50:10 +0430
+Processing by StaticPagesController#index as HTML
+Completed 500 Internal Server Error in 56ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-10 00:50:10 +0430
+Processing by StaticPagesController#contact as HTML
+Completed 500 Internal Server Error in 68ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+Started GET "/contact" for 127.0.0.1 at 2014-07-10 00:50:10 +0430
+Processing by StaticPagesController#contact as HTML
+Completed 500 Internal Server Error in 158ms
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"invalid value"}}
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"invalid value"}}
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"MyString"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 57ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (2.6ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"MyString"}}
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 21ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"MyString"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 20ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#new as HTML
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#contact as HTML
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#about as HTML
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#help as HTML
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#upload as HTML
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by StaticPagesController#score as HTML
+Completed 500 Internal Server Error in 17ms
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:50:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 192ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:50:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 66ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:50:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 154ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:50:11 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 59ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:50:12 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 60ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:50:12 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 152ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:50:12 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 60ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:50:12 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 151ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signin" for 127.0.0.1 at 2014-07-10 00:50:12 +0430
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 63ms
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  Rendered shared/_error_messages.html.erb (1.9ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Started GET "/users" for 127.0.0.1 at 2014-07-10 00:50:12 +0430
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 154ms
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/signup" for 127.0.0.1 at 2014-07-10 00:50:12 +0430
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.9ms)
+Completed 500 Internal Server Error in 69ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/signup" for 127.0.0.1 at 2014-07-10 00:50:13 +0430
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.3ms)
+Completed 500 Internal Server Error in 155ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signup" for 127.0.0.1 at 2014-07-10 00:50:13 +0430
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.3ms)
+Completed 500 Internal Server Error in 62ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/signup" for 127.0.0.1 at 2014-07-10 00:50:13 +0430
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.0ms)
+Completed 500 Internal Server Error in 161ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (1.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (51.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 20:20:13 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$xMYZdNjOa.NrNAYJlLIBt.ZEHNxM1RhSXSPEio1/rTpfRkTHF3ba."], ["remember_token", "58095cc9713dfd4fa49eb69db747a1efa77c6ae9"], ["updated_at", Wed, 09 Jul 2014 20:20:13 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 20:20:13 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$AAIOsYuz034o8jez.rnyAOdYZcShj.o.CyseWP9BbsBO4DztqI/6C"], ["remember_token", "f7104542e98582ef3b966d8ecae25bf43407f060"], ["updated_at", Wed, 09 Jul 2014 20:20:13 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 20:20:13 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$5igpc/7KO0Wm7qHUanrE8OfWhKz8.8YgoTz27LJTSkJpGuPKhcpW6"], ["remember_token", "14afb7c9455e3ececcaeb0de8dee5423c3a51e00"], ["updated_at", Wed, 09 Jul 2014 20:20:13 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 20:20:14 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$OzGUbe7T3BLvXzwes.YSRu82JTVCey38gTnQESGjIvKnmQqwl16X."], ["remember_token", "13e4cda6dc3905393b5faa3f540fd41f89573418"], ["updated_at", Wed, 09 Jul 2014 20:20:14 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  Rendered users/_form.html.erb (16.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (5.9ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (16.7ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 20:21:41 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$UJVww4KQQMl9x8w6KRLYIuDTGGVwN1dZeGn9SXYi6hNK51dlUXh6G"], ["remember_token", "fc9827c3da6289c5b8af8a6cad65ba3bb9db3391"], ["updated_at", Wed, 09 Jul 2014 20:21:41 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 20:21:41 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$NVQzYpUdh8yFcEKwpAwbjuqwzxkDW3DJGU69t.Sfx2AtZk5LeqouO"], ["remember_token", "821f979a05ef48e76684b6bd2920285724e26b44"], ["updated_at", Wed, 09 Jul 2014 20:21:41 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 20:21:41 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$LyucZAvsRvRsrUnqO2qaqOzXATVnwlgHLfkt2XOXsHbYTgitjDJoO"], ["remember_token", "806ef6ad4fc4aecaae031cdc1b565997c379a19c"], ["updated_at", Wed, 09 Jul 2014 20:21:41 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 20:21:41 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$D6PJfdYix/L0IIbo/PD7K.gEQRhZELgeNKWL.olizHmDBRb5t8Gpy"], ["remember_token", "d84e1cf71dc090a45d3ca7b5f2859c9bb90e94cb"], ["updated_at", Wed, 09 Jul 2014 20:21:41 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (133.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "firstarticle" text, "secondarticle" text, "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255)) [0m
+  [1m[35m (25.5ms)[0m  CREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36m (24.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (23.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (23.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140709193148')
+  [1m[36m (22.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140628214357')[0m
+  [1m[35m (25.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140709135658')
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (13.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.5ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (2.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (3.6ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (29.2ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 21:07:21 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$z78cfLlpWOHgvS6UnVkM4OPuBtonz8qyaz1oV8SQTGnfMpwuVYz8W"], ["remember_token", "23755eb07c1d402508bf8db3cb091dabf6981cc1"], ["updated_at", Wed, 09 Jul 2014 21:07:21 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 21:07:22 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$5rpWntRtZHGo/VmWiD3mD.sPphYyIr3W96hOxGIUU.Ta42trrkkki"], ["remember_token", "7f5c5afab6702fc2d22b0f2a9b158eced103baae"], ["updated_at", Wed, 09 Jul 2014 21:07:22 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 21:07:22 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$U2HsAwC7p3B/RLaHfh1LF.1/x807Xkl7xNtuIsaTGJHwXP6ji/UGe"], ["remember_token", "26e76294420ee32e1bf8b76678aadae30922f0f7"], ["updated_at", Wed, 09 Jul 2014 21:07:22 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 21:07:22 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$I.8Y2WsRFfXHZTr.T0bnOe7mvGXt1iGfO86kjjvce69pXsQnOktuG"], ["remember_token", "592a55934a437ef4bec556c6e5991d8336d5a974"], ["updated_at", Wed, 09 Jul 2014 21:07:22 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (5.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (98.0ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 21:09:37 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$p4r84IFuCRP.BC05F7H.ieEXBieAHtTiORzeP8jaT68LBVtbNRG5y"], ["remember_token", "8be5a0a88eadf69e91ce9588e87a213fae83a705"], ["updated_at", Wed, 09 Jul 2014 21:09:37 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 21:09:37 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$iZMpBIWRawN7dyFcvz28BOU1WFiOshgQDlGw1jiwnKCtG644sS2j6"], ["remember_token", "ce7473e427ac57496d8de49a90f25c086f46d67f"], ["updated_at", Wed, 09 Jul 2014 21:09:37 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 21:09:37 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$JHLdmTaUkYTggRdwGIKIyOFTOgt8B8SEgZQ7XWa2tTdeU3AFgRS4m"], ["remember_token", "15fedaa29c32b9173bf66c06032b01e393168ec9"], ["updated_at", Wed, 09 Jul 2014 21:09:37 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 21:09:37 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$Y6gx18c607ApkRicrqAZG.7hcxTUSzbSffC8y4zL/bcgUt8vFpnJi"], ["remember_token", "74c818122ed3dea4c8d20ff49e9cb3963ee3c09e"], ["updated_at", Wed, 09 Jul 2014 21:09:37 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (60.5ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 09 Jul 2014 21:33:36 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$TTSLZQ3.PcTIGMSpolz6iutFVy7iimfTyYI/1l5.5SLA9d6dP.0X6"], ["remember_token", "75e724ad7cdf4874f12d541697cf4e0f293a3015"], ["updated_at", Wed, 09 Jul 2014 21:33:36 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 21:33:36 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$uViXD7socCqFlYn7uDZNjelusQT5xBMRHRDfvT.zXhWNmYDGm5/Yu"], ["remember_token", "2cbd60cdfa78ce84e2a12241355bd9cad2f453b5"], ["updated_at", Wed, 09 Jul 2014 21:33:36 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (4.4ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 21:33:36 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$I1oDAHcV8CbTPXVkZddpuuM2c.eYcIOwinLla2qxcf81ATruLXEIC"], ["remember_token", "386df91ecebca159b0c8645f84f1eb2ed72fdfaa"], ["updated_at", Wed, 09 Jul 2014 21:33:36 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 09 Jul 2014 21:33:36 UTC +00:00], ["email", "user@example.com"], ["name", "Example User"], ["password_digest", "$2a$04$6tAeeYRMiGc8xgxf7Iv2vO2Nokjo3Z27VmvOR47uKv0WoJKs.sySO"], ["remember_token", "b30757449a1def646f49855ca86eb872c4a15e6f"], ["updated_at", Wed, 09 Jul 2014 21:33:36 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction

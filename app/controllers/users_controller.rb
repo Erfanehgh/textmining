@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:edit, :update, :destroy]
 
   # GET /users
   # GET /users.json
@@ -17,6 +17,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+	@user = User.find(params[:id])
   end
 
   # GET /users/new
@@ -33,24 +34,30 @@ class UsersController < ApplicationController
   def create
    
  @user = User.new(user_params)
+if @user.save
+      sign_in @user
+      flash[:success] = "Welcome to the Plagiarism Detector!"
+      redirect_to @user
+    else
+      render 'new'
+    end
 #@user.save
-  if @user.save
+#render 'show'
 
-redirect_to "/score"
+
+#redirect_to "/score"
    # render action: "./static_pages/score.html.erb"
 # respond_to do |format|
 #	format.html {redirect_to "/score"}  
 #end
-else
-redirect_to "/inputtext"
-   end
+#redirect_to "/inputtext"
 
   end
 
   private
     def user_params
-      params.require(:user).permit(:name, :email, :firstarticle,
-                                   :secondarticle)
+      params.require(:user).permit(:name, :email, :password,
+                                   :password_confirmation, :firstarticle ,:secondarticle)
     end
 
 #  end

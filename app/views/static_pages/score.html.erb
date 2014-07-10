@@ -1,13 +1,19 @@
+<% provide(:title, 'Score') %>
+
 <h1>HOW MUCH SIMILAR ARE THEY...</h1>
-<p><label>This two documents are
+<h2><label>These two documents are
 
 <%=@score%>
 
 
- similar! </label> 
+%  similar! </label> 
 
-</p>
+</h2>
+<br>
+<h1> The judgment is on your own :) </h1>
 
-
- <%= link_to "Back to input", './inputtext',
+<%= link_to "Back to text input", './inputtext',
                                 class: "btn btn-large btn-primary" %>
+<%= link_to "Back to file upload", './upload',
+                                class: "btn btn-large btn-primary" %>
+

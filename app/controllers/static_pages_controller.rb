@@ -12,6 +12,11 @@ require 'rubygems'
  #   render :text => "File has been uploaded successfully"
   end
 
+def uploadedtext
+@first=params[:first]
+@second=params[:second]
+end
+
 def uploaded
 
 #require 'rubygems'
@@ -77,15 +82,16 @@ end
 
   def score
         require './textmining.rb'
-	@first = User.last.firstarticle
-   	@second=User.last.secondarticle
+
+	@first = current_user.firstarticle
+  	@second=current_user.secondarticle
 	text=Textsimilarity.new
 	@score=text.calculateSimilarity(@first,@second)
 #	render :score
   end
 
 def inputtext
-	@user=User.new		
+	#@user=User.new		
 end
 
 #def new
