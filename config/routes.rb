@@ -28,6 +28,7 @@ match '/uploadedtext',   to: 'static_pages#uploadedtext',   via: 'post'
 match '/inputtext',   to: 'static_pages#inputtext',   via: 'get'
 match '/score', to: 'static_pages#score', via: 'get'
 match '/score', to: 'static_pages#score', via: 'post'
+match '/show',  to: 'users#show',         via: 'get'
 
 
 

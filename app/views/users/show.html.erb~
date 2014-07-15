@@ -1,0 +1,30 @@
+<% provide(:title, current_user) %>
+<h1> Welcome to Plagiarism Detecotor! app</h1>
+<%@user=current_user%>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <label>Name:</label>
+  <%= @user.name %>
+</p>
+
+<p>
+  <label>Email:</label>
+  <%= @user.email %>
+</p>
+
+
+
+
+<%= link_to "Enter Text For Comparison", inputtext_path,
+                                class: "btn btn-large btn-primary" %>
+<%= link_to "Upload Files For Comparison", upload_path,
+                                class: "btn btn-large btn-primary" %>
+
+<br>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+
+
