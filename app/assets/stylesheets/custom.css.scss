@@ -4,6 +4,14 @@
 
 $grayMediumLight: #B3EE3A;
 
+.hero-unit {
+	background-color: transparent;
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: auto;
+}
+
 div {
  background-color: #F0E68C;
 
@@ -265,4 +273,5 @@ input {
   @extend .control-group;
   @extend .error;
 }
+
 
