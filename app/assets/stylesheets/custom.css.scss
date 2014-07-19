@@ -16,9 +16,8 @@ div {
  background-color: #F0E68C;
 width: auto;
 align: center;
-
-
 }
+
 @font-face {
   font-family: 'ar';
   src: url('<%= asset_path("ar.eot") %>');
