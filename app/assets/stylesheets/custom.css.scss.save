@@ -1,0 +1,279 @@
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: #B3EE3A;
+
+
+div {
+ background-color: #F0E68C;
+
+
+}
+@font-face {
+  font-family: 'ar';
+  src: url('<%= asset_path("ar.eot") %>');
+  src: url('<%= asset_path("ar.eot#iefix") %>') format('embedded-opentype'),
+       url('<%= asset_path("ar.woff") %>') format('woff'),
+       url('<%= asset_path("ar.ttf") %>') format('truetype');
+}
+
+
+.hero-unit {
+background-color: transparent;
+}
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+background-color: #F0E68C;
+foreground-color: #F0E68C;
+}
+
+body {
+ padding-top: 60px;
+background-color: #F0E68C;
+foreground-color: #F0E68C;
+
+}
+
+section {
+  overflow: auto;
+background-color: #F0E68C;
+foreground-color: #F0E68C;
+
+}
+
+textarea {
+  resize: vertical;
+
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+
+}
+
+h1 {
+font-family: 'ar';
+  font-size: 3em;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+font-family: 'ar';
+  font-size: 2em;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #6E8B3D;
+}
+
+
+h3 {
+font-family: 'ar';
+  font-size: 1.5em;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #000000;
+}
+
+h4 {
+font-family: 'ar';
+  font-size: 1.2em;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #000000;
+}
+
+p {
+font-family: 'ar';
+  font-size: 1.1em;
+text-align: center;
+
+  line-height: 1.7em;
+}
+
+label{
+letter-spacing: 1px;
+font-size: 1.2em;
+text-align: center;
+  font-weight: normal;
+  color: #006400;
+}
+/* header */
+
+#logo {
+  float: left;
+  margin-right: auto;
+  font-size: 1.7em;
+  color: #698B22;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: auto;
+  font-weight: bold;
+  line-height: 1;
+
+  &:hover {
+    color: #FF0000;
+    text-decoration: none;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: auto;
+  padding-top: auto;
+  border-top: 1px solid $grayMediumLight;
+  color: #000000;
+  a {
+    color: #000000;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+/* button */
+
+
+.follow-button{
+background: transparent;
+     border: 3px solid #000000;
+     display: block;
+     float: center;
+      background: #66CD00;
+      color: #000000;
+      font-weight: 400;
+      font-size: 1.5em; //font size does not change
+      display: block;
+      padding: 0px 4px 0px 4px; //modification doesn't show..
+      text-decoration: none;
+	text-align: center;
+	text-color: #000000;
+      &:hover { 
+        color: rgb(255, 215, 0);
+        background: #66CD00;
+      }
+  input[type='submit'] {
+      color: #66CD00;
+      font-weight: 400;
+      font-size: 1.4em; //font size does not change
+      display: block;
+      padding: 0px 4px 0px 4px; //modification doesn't show..
+      text-decoration: none;
+text-align: center;
+text-color : #000000;
+      &:hover { 
+      color: rgb(255, 215, 0);
+      }
+    } 
+ }
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+
+/* sidebar */
+
+aside {
+  section {
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+foreground-color: #F0E68C;
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar {
+  float: center;
+  margin-right: 10px;
+}
+
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+}
+
+
+
+
