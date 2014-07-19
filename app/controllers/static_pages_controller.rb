@@ -13,8 +13,9 @@ require 'rubygems'
   end
 
 def uploadedtext
-if ((params[:file].nil?) && (params[:file1].nil?))
-flash[:error] = "Please Enter some Text!"
+
+if params[:first].empty? ||  params[:second].empty?
+flash[:error] = "Please fill both TextArea!"
 redirect_to inputtext_path
 else
 @first=params[:first]
@@ -37,8 +38,8 @@ def uploaded
 #tf=str.gsub! "\n", " "
 #@file_content =tf
 
-if ((params[:file].nil?) && (params[:file1].nil?))
- flash[:error] = "Please choose some files!"
+if ((params[:file].nil?) || (params[:file1].nil?))
+ flash[:error] = "Please choose both files!"
 
  redirect_to upload_path
 
