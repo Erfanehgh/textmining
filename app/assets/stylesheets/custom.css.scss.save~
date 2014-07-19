@@ -4,20 +4,12 @@
 
 $grayMediumLight: #B3EE3A;
 
-.hero-unit {
-	background-color:#E3CF57;
-}
-
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-    width: auto;
-}
 
 div {
  background-color: #F0E68C;
-width: auto;
-align: center;
-}
 
+
+}
 @font-face {
   font-family: 'ar';
   src: url('<%= asset_path("ar.eot") %>');
@@ -26,6 +18,10 @@ align: center;
        url('<%= asset_path("ar.ttf") %>') format('truetype');
 }
 
+
+.hero-unit {
+background-color: transparent;
+}
 @mixin box_sizing {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -41,7 +37,7 @@ foreground-color: #F0E68C;
 }
 
 body {
-  padding-top: 60px;
+ padding-top: 60px;
 background-color: #F0E68C;
 foreground-color: #F0E68C;
 
@@ -131,14 +127,15 @@ text-align: center;
 
 #logo {
   float: left;
-  margin-right: 10px;
+  margin-right: auto;
   font-size: 1.7em;
   color: #698B22;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: auto;
   font-weight: bold;
   line-height: 1;
+
   &:hover {
     color: #FF0000;
     text-decoration: none;
@@ -148,8 +145,8 @@ text-align: center;
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  margin-top: auto;
+  padding-top: auto;
   border-top: 1px solid $grayMediumLight;
   color: #000000;
   a {
@@ -172,6 +169,8 @@ footer {
 }
 
 /* button */
+
+
 .follow-button{
 background: transparent;
      border: 3px solid #000000;
@@ -244,7 +243,7 @@ foreground-color: #F0E68C;
 }
 
 .gravatar {
-  float: left;
+  float: center;
   margin-right: 10px;
 }
 
@@ -274,6 +273,7 @@ input {
   @extend .control-group;
   @extend .error;
 }
+
 
 
 
