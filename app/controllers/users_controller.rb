@@ -43,6 +43,7 @@ if @user.save
       flash[:success] = "Welcome to the Plagiarism Detector!"
       redirect_to @user
     else
+
       render 'new'
     end
 #@user.save

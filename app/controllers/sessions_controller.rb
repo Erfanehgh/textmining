@@ -11,7 +11,8 @@ def new
  
 
    else
-      flash.now[:error] = 'Invalid email/password combination'
+
+      flash[:error] = 'Invalid email/password combination'
       redirect_to signin_path
     end
   end

@@ -1,16 +1,20 @@
 <% provide(:title, 'Upload Files') %>
 
-
-<h1>File Upload</h1>
+<h1>Upload Files Here:</h1>
+<br>
 <%= form_tag '/uploaded' , :multipart => true do %>
-  <label for="file">Upload First Article</label> <%= file_field_tag "file" %>
+<h2>  <label for="file">Upload First Article</label> <%= file_field_tag "file" %>
+</h2>
 <br>
+<h2>
   <label for="file1">Upload Second Article</label> <%= file_field_tag "file1" %>
+</h2>
 <br>
 
 <br>
-
-<%= submit_tag  "upload" %>
+<h3>
+	<%= submit_tag  "upload" , class: "follow-button"%>
+</h3>
 
 <% end %>
 

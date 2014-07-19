@@ -4,6 +4,18 @@
 
 $grayMediumLight: #B3EE3A;
 
+div {
+ background-color: #F0E68C;
+
+
+}
+@font-face {
+  font-family: 'ar';
+  src: url('<%= asset_path("ar.eot") %>');
+  src: url('<%= asset_path("ar.eot#iefix") %>') format('embedded-opentype'),
+       url('<%= asset_path("ar.woff") %>') format('woff'),
+       url('<%= asset_path("ar.ttf") %>') format('truetype');
+}
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -15,18 +27,27 @@ $grayMediumLight: #B3EE3A;
 
 html {
   overflow-y: scroll;
+background-color: #F0E68C;
+foreground-color: #F0E68C;
 }
 
 body {
   padding-top: 60px;
+background-color: #F0E68C;
+foreground-color: #F0E68C;
+
 }
 
 section {
   overflow: auto;
+background-color: #F0E68C;
+foreground-color: #F0E68C;
+
 }
 
 textarea {
   resize: vertical;
+
 }
 
 .center {
@@ -40,9 +61,11 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+
 }
 
 h1 {
+font-family: 'ar';
   font-size: 3em;
   letter-spacing: 0px;
   margin-bottom: 30px;
@@ -50,7 +73,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+font-family: 'ar';
+  font-size: 2em;
   letter-spacing: 0px;
   margin-bottom: 30px;
   text-align: center;
@@ -58,8 +82,32 @@ h2 {
   color: #6E8B3D;
 }
 
+
+h3 {
+font-family: 'ar';
+  font-size: 1.5em;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #000000;
+}
+
+h4 {
+font-family: 'ar';
+  font-size: 1.2em;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #000000;
+}
+
 p {
+font-family: 'ar';
   font-size: 1.1em;
+text-align: center;
+
   line-height: 1.7em;
 }
 
@@ -76,7 +124,7 @@ text-align: center;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #B3EE3A;
+  color: #698B22;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -116,21 +164,37 @@ footer {
 
 /* button */
 .follow-button{
+background: transparent;
      border: 3px solid #000000;
      display: block;
      float: center;
-      background: #6B8E23;
-      color: #6B8E23;
+      background: #66CD00;
+      color: #000000;
+      font-weight: 400;
+      font-size: 1.5em; //font size does not change
+      display: block;
+      padding: 0px 4px 0px 4px; //modification doesn't show..
+      text-decoration: none;
+	text-align: center;
+	text-color: #000000;
+      &:hover { 
+        color: rgb(255, 215, 0);
+        background: #66CD00;
+      }
+  input[type='submit'] {
+      color: #66CD00;
       font-weight: 400;
       font-size: 1.4em; //font size does not change
       display: block;
-      padding: 0px 2px 0px 2px; //modification doesn't show..
+      padding: 0px 4px 0px 4px; //modification doesn't show..
       text-decoration: none;
+text-align: center;
+text-color : #000000;
       &:hover { 
-        color: rgb(229, 246, 255);
-        background: #6B8E23;
+      color: rgb(255, 215, 0);
       }
-  }
+    } 
+ }
 
 /* miscellaneous */
 
@@ -199,3 +263,4 @@ input {
   @extend .control-group;
   @extend .error;
 }
+

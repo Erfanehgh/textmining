@@ -1,19 +1,21 @@
 <% provide(:title, 'Text Input') %>
 
 <%= @user=current_user %>
-<h1> Input Text <h1>
-<h2> Please Enter your Text here for comparison! <h2>
+<h1> Input Text </h1>
+<h2> Please Enter your Text here for comparison! </h2>
 
-<label> First Article </label>
+<h3>
+<label> First Article: </label>
 
 <%=form_tag uploadedtext_path , :id=>"my" do %>
 
 <%=text_area_tag "first"%>
 
-<label> Second Article </label>
+<label> Second Article: </label>
 <%=text_area_tag "second"%>
-
-<%= submit_tag "Score" %>
-
+</h3>
+<h3>
+<%= submit_tag "Score", class: "follow-button" %>
+</h3>
 <%end %>
 

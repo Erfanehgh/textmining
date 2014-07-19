@@ -13,8 +13,14 @@ require 'rubygems'
   end
 
 def uploadedtext
+if ((params[:file].nil?) && (params[:file1].nil?))
+flash[:error] = "Please Enter some Text!"
+redirect_to inputtext_path
+else
 @first=params[:first]
 @second=params[:second]
+
+end
 end
 
 def uploaded
@@ -31,6 +37,12 @@ def uploaded
 #tf=str.gsub! "\n", " "
 #@file_content =tf
 
+if ((params[:file].nil?) && (params[:file1].nil?))
+ flash[:error] = "Please choose some files!"
+
+ redirect_to upload_path
+
+else
 File.open(params[:file].path, "rb") do |io|
  reader = PDF::Reader.new(io)
 str=""
@@ -53,8 +65,7 @@ tf1=str.gsub! "\n", " "
 
 end
 
-
-
+end
 #uploaded_file1 =params[:file1].original_filename
 #reader = PDF::Reader.new(uploaded_file1)
 #str1=""

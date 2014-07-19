@@ -1,17 +1,27 @@
 <% provide(:title, 'Content Confirmation') %>
 
- <%= link_to "Confirm", score_path,
-                                class: "btn btn-large btn-primary" %>
+<h2> Please Confirm files content: </h2>
 
-<label>Content of first article</label>
+<h3>
+ <%= link_to "Confirm", score_path,
+                               class: "follow-button" %>
+</h3>
 <br>
+<h2>
+<label>Content of first article</label>
+</h2>
+
 <p>
 <%=@file_content%>
 </p>
 
-<label>Content of Second article</label>
-
 <br>
+<br>
+<h2>
+<label>Content of Second article</label>
+</h2>
+<br>
+
 <p>
 <%=@file_content1%>
 </p>
@@ -19,8 +29,9 @@
 <%=current_user.update_attribute(:firstarticle, @file_content)%>
 <%=current_user.update_attribute(:secondarticle, @file_content1)%>
 
-
+<h3>
  <%= link_to "Confirm", score_path,
-                                class: "btn btn-large btn-primary" %>
+                                class: "follow-button" %>
+</h3>
 
 

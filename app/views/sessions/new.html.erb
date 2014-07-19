@@ -4,17 +4,17 @@
 <div class="row">
   <div class="span6 offset3">
     <%= form_for(:session, url: sessions_path) do |f| %>
-
+<h4>
       <%= f.label :email %>
       <%= f.text_field :email %>
 
 
       <%= f.label :password %>
       <%= f.password_field :password %>
-
-      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+</h4>
+      <%= f.submit "Sign in" , class: "follow-button" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <h4>New user? <%= link_to "Sign up now!", signup_path %></h4>
   </div>
 </div>
